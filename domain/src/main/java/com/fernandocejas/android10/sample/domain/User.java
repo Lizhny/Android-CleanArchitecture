@@ -77,17 +77,14 @@ public class User {
   }
 
   @Override public String toString() {
-    StringBuilder stringBuilder = new StringBuilder();
 
-    stringBuilder.append("***** User Details *****\n");
-    stringBuilder.append("id=" + this.getUserId() + "\n");
-    stringBuilder.append("cover url=" + this.getCoverUrl() + "\n");
-    stringBuilder.append("fullname=" + this.getFullName() + "\n");
-    stringBuilder.append("email=" + this.getEmail() + "\n");
-    stringBuilder.append("description=" + this.getDescription() + "\n");
-    stringBuilder.append("followers=" + this.getFollowers() + "\n");
-    stringBuilder.append("*******************************");
-
-    return stringBuilder.toString();
+    return "***** User Details *****\n" +
+            "id=" + this.getUserId() + "\n" +
+            "cover url=" + this.getCoverUrl() + "\n" +
+            "fullname=" + this.getFullName() + "\n" +
+            "email=" + this.getEmail() + "\n" +
+            "description=" + this.getDescription() + "\n" +
+            "followers=" + this.getFollowers() + "\n" +
+            "*******************************";
   }
 }
